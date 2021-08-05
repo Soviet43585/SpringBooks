@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>Welcome</title>
+    <link rel="stylesheet" type="text/css" th:href="@{../css/style.css}"/>
+</head>
+<body>
+<h1 th:utext="${message}"></h1>
+<h2>
+    <a th:href="@{/allbooks}">Get book model list</a>
+    <br />
+    <a th:href="@{/alldbbooks}">Get book db list</a>
+</h2>
+</body>
+</html>
